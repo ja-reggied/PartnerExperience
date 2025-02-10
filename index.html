@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="React Presentation App">
-  <title>React Presentation</title>
-  <link rel="stylesheet" href="style.css"> <!-- Optional: Add styles if needed -->
-</head>
-<body>
-  <div id="root"></div>
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import PERoadmap from './PERoadmap';  // Ensure the path is correct
 
-  <!-- React and JS Bundles -->
-  <script src="main.js" defer></script> <!-- This will be your compiled React bundle -->
-</body>
-</html>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <PERoadmap />
+  </React.StrictMode>
+);
